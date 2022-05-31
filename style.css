@@ -1,0 +1,124 @@
+
+body{
+    box-sizing: border-box;
+    background: #5f0f40;
+}
+.container {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+}
+.container div {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: whirl 2s ease-in infinite;
+}
+.container div:first-of-type {
+    align-items:flex-end;
+}
+span {
+    display:block;
+    width: 50px;
+    height: 50px;
+    background-color: #168aad;
+    border-radius: 10%;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+} 
+.one {
+    animation: circleJourney1 4s ease-in infinite;
+}
+.two {
+    animation: circleJourney2 4s ease-in-out  infinite;
+}
+.three {
+    animation: circleJourney3 4s ease-in infinite;
+}
+.four {
+    animation: circleJourney4 4s ease-in-out infinite;
+}
+
+@keyframes whirl {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    }
+@keyframes circleJourney1 {
+    50% {
+        transform: translate(-10em, -10em) scale(6);
+        border-radius: 50%;
+      }
+      57% {
+        background: rgba( 217, 237, 146, 0.35 );
+        backdrop-filter: blur( 16.5px );
+        -webkit-backdrop-filter: blur( 16.5px );
+      }
+    100% {
+        transform: translate(0,0) scale(1);
+        border-radius: 10%;
+      }
+}
+@keyframes circleJourney2 {
+    50% {
+        transform: translate(-10em, 10em) scale(6);
+        border-radius: 50%;
+    } 
+    59% {
+        background: rgba( 52, 160, 164, 0.45 );
+        backdrop-filter: blur( 16.5px );
+        -webkit-backdrop-filter: blur( 16.5px );
+    }
+    100% {
+        transform: translate(0,0) scale(1);
+        border-radius: 10%;
+    }
+}
+@keyframes circleJourney3 {
+    50%{
+        transform: translate(10em, 10em) scale(6);
+        border-radius: 50%;
+      }
+      59% {
+        background: rgba( 246, 189, 96, 0.45 );
+        backdrop-filter: blur( 16.5px );
+        -webkit-backdrop-filter: blur( 16.5px );
+      }
+    100% {
+        transform: translate(0,0) scale(1);
+        border-radius: 10%;
+      }
+}
+@keyframes circleJourney4 {
+    50% {
+        transform: translate(10em, -10em) scale(6);
+        border-radius: 50%;
+      }
+      59%{
+        background: rgba( 240, 128, 128, 0.45 );
+        backdrop-filter: blur( 16.5px );
+        -webkit-backdrop-filter: blur( 16.5px );
+      }
+    100% {
+        transform: translate(0,0) scale(1);
+        border-radius: 10%;
+      }
+}
+
+
+
+
+
+
+
+
