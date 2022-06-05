@@ -1,1 +1,1 @@
-Text animation. CSS customised variables and text reflection 
+Text animation-CSS customised variables and text reflection 
