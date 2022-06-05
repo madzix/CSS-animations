@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Activity 2</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+body {
+    background-color: black;
+}
+.container {
+    width:100%;
+    height:100vh;
+    position:relative;
+    font-size: 15vw;
+    font-family: 'Roboto Slab', serif;
+}
+
+.css-reflects {
+    -webkit-box-reflect: below -40% -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(25%, transparent), to(rgba(255, 255, 255, 0.5)));
+    font-weight: bold;
+}
+
+.container video {
+    width:100%;
+    height:100vh;
+    min-height:400px;
+}
+.text-box {
+    position:absolute;
+    background:#000000;
+    background-repeat: no-repeat;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    color: #ffffff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 900px;
+    top:0%;
+    mix-blend-mode: multiply;
+    text-align:center;
+    height: 100vh;
+    width: 100%;
+}
+ul li {
+ list-style: none;
+ display: inline-block;
+ opacity: 0;
+ -webkit-animation: reveal 2s calc(var(--order) * 300ms) ease-in forwards;
+         animation: reveal 2s calc(var(--order) * 300ms) forwards;
+}
+
+@-webkit-keyframes reveal {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(1200px, 0);
+                transform: translate(1200px, 0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translate(0,0);
+                transform: translate(0,0);
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(100px, 0);
+                transform: translate(100px, 0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translate(0,0);
+                transform: translate(0,0);
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <video src="enginakyurt.mp4" type="video/mp4" autoplay loop muted ></video>
+        <div class="text-box">
+            <ul class="css-reflects">
+                <li style="--order: 1">C</li>
+                <li style="--order: 2">O</li>
+                <li style="--order: 3">D</li>
+                <li style="--order: 4">E</li>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>
+
